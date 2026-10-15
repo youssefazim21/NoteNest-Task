@@ -1,0 +1,228 @@
+[
+  {
+    "message_id": "FB-01",
+    "classification": "bug",
+    "title": "PDF export cuts off final pages of long note",
+    "steps_to_reproduce": [
+      "Exported a 40 page thesis note to PDF"
+    ],
+    "expected_behavior": "The exported PDF should contain all 40 pages of the note",
+    "actual_behavior": "The last 6 or 7 pages are missing from the exported PDF",
+    "severity": "S2",
+    "possible_duplicate_issue": "NN-104",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-02",
+    "classification": "feature_request",
+    "title": "Add calendar view for reminders",
+    "steps_to_reproduce": [],
+    "expected_behavior": "",
+    "actual_behavior": "",
+    "severity": null,
+    "possible_duplicate_issue": null,
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-03",
+    "classification": "bug",
+    "title": "App crashes immediately on launch (iOS 15 after update)",
+    "steps_to_reproduce": [
+      "Open the NoteNest app on iPhone 15"
+    ],
+    "expected_behavior": "The app should open normally",
+    "actual_behavior": "The app crashes as soon as it is opened",
+    "severity": "S1",
+    "possible_duplicate_issue": null,
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-04",
+    "classification": "bug",
+    "title": "search cafe notes with the accent (café) and nothing comes up but i KNOW i have 3 notes w that word. searching without accent works fine",
+    "steps_to_reproduce": [
+      "searched cafe notes with the accent (café)"
+    ],
+    "expected_behavior": "searching for café should find notes containing café",
+    "actual_behavior": "searching for café returns no results",
+    "severity": "S3",
+    "possible_duplicate_issue": "NN-102",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-05",
+    "classification": "bug",
+    "title": "Offline edits lost after reconnect",
+    "steps_to_reproduce": [
+      "Wrote note offline (no signal)",
+      "Regained wifi connection",
+      "Observed note reverted to previous version"
+    ],
+    "expected_behavior": "Offline edits should be preserved and merged with server version upon reconnection",
+    "actual_behavior": "Note reverted to pre-offline version, losing new text",
+    "severity": "S1",
+    "possible_duplicate_issue": "NN-110",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-06",
+    "classification": "bug",
+    "title": "Lost 2 hours of work after offline edits overwritten by older server version",
+    "steps_to_reproduce": [
+      "Edited a note on a flight in airplane mode",
+      "Opened laptop later and found old version present, flight edits overwritten"
+    ],
+    "expected_behavior": "Offline edits should be preserved and merged when device reconnects",
+    "actual_behavior": "Offline edits were lost and overwritten by older server version",
+    "severity": "S1",
+    "possible_duplicate_issue": "NN-110",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-07",
+    "classification": "bug",
+    "title": "Deleted tags still appear in autocomplete",
+    "steps_to_reproduce": [
+      "Deleted the tags 'old' and 'misc'",
+      "Typed # in a note",
+      "Observed that deleted tags still autocomplete"
+    ],
+    "expected_behavior": "Deleted tags should not appear in the # autocomplete list",
+    "actual_behavior": "Deleted tags 'old' and 'misc' still appear in the autocomplete list",
+    "severity": "S4",
+    "possible_duplicate_issue": "NN-107",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-08",
+    "classification": "feature_request",
+    "title": "Why can't I change the font size?? every other notes app lets you. 2 stars until this exists",
+    "steps_to_reproduce": [],
+    "expected_behavior": "",
+    "actual_behavior": "",
+    "severity": null,
+    "possible_duplicate_issue": null,
+    "duplicate_of_message": null,
+    "confidence": "medium",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-09",
+    "classification": "bug",
+    "title": "Reminders ring twice",
+    "steps_to_reproduce": [
+      "Set a reminder on Android"
+    ],
+    "expected_behavior": "Reminder notification rings once",
+    "actual_behavior": "Reminder notification rings twice, about 2 seconds apart",
+    "severity": "S3",
+    "possible_duplicate_issue": "NN-105",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-10",
+    "classification": "bug",
+    "title": "Attachment failed for 25MB PDF with generic error",
+    "steps_to_reproduce": [
+      "Attempt to attach a 25MB PDF file to a note in NoteNest iOS app version 4.2.1"
+    ],
+    "expected_behavior": "The attachment should succeed or provide a clear error message indicating the size limit",
+    "actual_behavior": "Shows 'Something went wrong' with no indication of the cause",
+    "severity": "S3",
+    "possible_duplicate_issue": "NN-106",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-11",
+    "classification": "bug",
+    "title": "Dark mode code blocks unreadable",
+    "steps_to_reproduce": [],
+    "expected_behavior": "",
+    "actual_behavior": "",
+    "severity": "S3",
+    "possible_duplicate_issue": "NN-103",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-12",
+    "classification": "bug",
+    "title": "Notes inside renamed folder disappear from sidebar",
+    "steps_to_reproduce": [
+      "Renamed a folder to '📚 Reading'",
+      "Renamed another folder with the same result"
+    ],
+    "expected_behavior": "Notes inside the renamed folder should remain visible in the sidebar",
+    "actual_behavior": "None of the notes inside the renamed folder show in the sidebar, though they appear in search",
+    "severity": "S3",
+    "possible_duplicate_issue": null,
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-13",
+    "classification": "bug",
+    "title": "Shared-note link shows Access denied to invitees without an account",
+    "steps_to_reproduce": [
+      "Shared a note with my friend by email invite.",
+      "He clicks the link and gets 'Access denied'."
+    ],
+    "expected_behavior": "Invitee without an account should be able to access the shared note via the link.",
+    "actual_behavior": "Invitee gets 'Access denied' when opening the link.",
+    "severity": "S2",
+    "possible_duplicate_issue": "NN-109",
+    "duplicate_of_message": null,
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-14",
+    "classification": "bug",
+    "title": "PDF export drops the end of long notes",
+    "steps_to_reproduce": [
+      "Export a long note (25 pages) to PDF"
+    ],
+    "expected_behavior": "All 25 pages appear in the exported PDF",
+    "actual_behavior": "Only 19 pages appear in the exported PDF",
+    "severity": "S2",
+    "possible_duplicate_issue": "NN-104",
+    "duplicate_of_message": "FB-01",
+    "confidence": "high",
+    "clarifying_question": null
+  },
+  {
+    "message_id": "FB-15",
+    "classification": "bug",
+    "title": "Reminder notifications show up twice every time",
+    "steps_to_reproduce": [
+      "Reminder notifications show up 2x every time"
+    ],
+    "expected_behavior": "Reminder notifications should show up once",
+    "actual_behavior": "Reminder notifications show up twice every time",
+    "severity": "S3",
+    "possible_duplicate_issue": "NN-105",
+    "duplicate_of_message": "FB-09",
+    "confidence": "high",
+    "clarifying_question": null
+  }
+]
